@@ -1,11 +1,11 @@
 package pl.ciemic.sfgpetclinic.services.map;
 
 import pl.ciemic.sfgpetclinic.model.Vet;
-import pl.ciemic.sfgpetclinic.services.CrudService;
+import pl.ciemic.sfgpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServicesMap extends AbstractMapServices<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServicesMap extends AbstractMapServices<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
