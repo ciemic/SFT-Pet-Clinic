@@ -1,10 +1,12 @@
 package pl.ciemic.sfgpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import pl.ciemic.sfgpetclinic.model.Owner;
 import pl.ciemic.sfgpetclinic.services.OwnerService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapServices<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {

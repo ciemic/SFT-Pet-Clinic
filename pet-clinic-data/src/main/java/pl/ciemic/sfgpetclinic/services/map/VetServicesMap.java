@@ -1,10 +1,12 @@
 package pl.ciemic.sfgpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import pl.ciemic.sfgpetclinic.model.Vet;
 import pl.ciemic.sfgpetclinic.services.VetService;
 
 import java.util.Set;
 
+@Service
 public class VetServicesMap extends AbstractMapServices<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
